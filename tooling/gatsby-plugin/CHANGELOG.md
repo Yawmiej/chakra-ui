@@ -1,5 +1,51 @@
 # Change Log
 
+## 3.0.6
+
+### Patch Changes
+
+- [#6584](https://github.com/chakra-ui/chakra-ui/pull/6584)
+  [`ababbde39`](https://github.com/chakra-ui/chakra-ui/commit/ababbde390f573b254a380a83fb88a4ccd9d0131)
+  Thanks [@nikolovlazar](https://github.com/nikolovlazar)! - Removed default
+  value of portalZIndex
+
+## 3.0.5
+
+### Patch Changes
+
+- [#6508](https://github.com/chakra-ui/chakra-ui/pull/6508)
+  [`445661955`](https://github.com/chakra-ui/chakra-ui/commit/445661955dff1329156b535ef50c7cf27b8663a9)
+  Thanks [@anubra266](https://github.com/anubra266)! - - Initial release of
+  react hooks
+  - Refactor all packages to reduce bundle size
+  - Refactor code for proper prop doc generatation
+
+## 3.0.4
+
+### Patch Changes
+
+- Force release
+
+## 3.0.3
+
+### Patch Changes
+
+- Force new release
+
+## 3.0.2
+
+### Patch Changes
+
+- [#6339](https://github.com/chakra-ui/chakra-ui/pull/6339)
+  [`b3fb69d2e`](https://github.com/chakra-ui/chakra-ui/commit/b3fb69d2ed971647fb648c8f34ab0ae563f75818)
+  Thanks [@itkrt2y](https://github.com/itkrt2y)! - update gatsyby packages
+
+* [#6356](https://github.com/chakra-ui/chakra-ui/pull/6356)
+  [`1839e22eb`](https://github.com/chakra-ui/chakra-ui/commit/1839e22ebad1c2a52795eac5fd0b3eb38ae03f9c)
+  Thanks [@segunadebayo](https://github.com/segunadebayo)! - - Force release due
+  to change in build configuration
+  - Update package `main` and `module` entries
+
 ## 3.0.1
 
 ### Patch Changes

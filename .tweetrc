@@ -1,10 +1,13 @@
 {
-  "version": "2.2.3",
-  "releaseUrl": "https://github.com/chakra-ui/chakra-ui/releases/tag/@chakra-ui/react@2.2.3",
+  "version": "2.2.9",
+  "releaseUrl": "https://github.com/chakra-ui/chakra-ui/releases/tag/@chakra-ui/react@2.2.9",
   "patches": [
-    "- Export `useStyles` equivalent for multipart component styles. Accordion exports\n`useAccordionStyles`, Alert exports `useAlertStyles`, and so on. \n"
+    "- Initial release of react hooks\n- Refactor all packages to reduce bundle size\n- Refactor code for proper prop doc generatation",
+    "- Fix default values for min and max prop in docs \n",
+    "- Show at most one tooltip at a time \n"
   ],
   "features": [
-    "- Add new highlight text component to emphasize any part of a string with the\n`mark` tag.\n\n```jsx live=false\n<Text fontWeight=\"semibold\">\n  <Highlight\n    query={\"with speed\"}\n    styles={{ px: \"2\", py: \"1\", rounded: \"full\", bg: \"teal.100\" }}\n  >\n    Create accessible React apps with speed\n  </Highlight>\n</Text>\n``` \n"
+    "- Allow wrapping tab panels \n",
+    "- Initial release of react hooks\n- Refactor all packages to reduce bundle size\n- Refactor code for proper prop doc generatation"
   ]
 }

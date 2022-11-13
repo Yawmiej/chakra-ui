@@ -1,4 +1,5 @@
-import { ChakraProvider } from "@chakra-ui/react"
+import { ChakraProvider } from "@chakra-ui/provider"
+import theme from "@chakra-ui/theme"
 import "@testing-library/jest-dom/extend-expect"
 import { render as rtlRender, RenderOptions } from "@testing-library/react"
 import { toHaveNoViolations } from "jest-axe"
@@ -6,6 +7,10 @@ import * as React from "react"
 import userEvent from "@testing-library/user-event"
 
 expect.extend(toHaveNoViolations)
+
+const ChakraProviderWrapper = (props: any) => (
+  <ChakraProvider {...props} theme={theme} />
+)
 
 export interface ChakraRenderOptions extends RenderOptions {
   withChakraProvider?: boolean
@@ -17,18 +22,13 @@ export function render(
     withChakraProvider: true,
   },
 ): ReturnType<typeof rtlRender> & { user: ReturnType<typeof userEvent.setup> } {
-  const { wrapper: Wrapper = React.Fragment, ...rtlOptions } = options
   const user = userEvent.setup()
 
-  const MaybeChakraProvider = withChakraProvider
-    ? ChakraProvider
-    : React.Fragment
+  if (withChakraProvider) {
+    options.wrapper = ChakraProviderWrapper
+  }
 
-  const result = rtlRender(
-    <MaybeChakraProvider>
-      <Wrapper>{ui}</Wrapper>
-    </MaybeChakraProvider>,
-    rtlOptions,
-  )
+  const result = rtlRender(ui, options)
+
   return { user, ...result }
 }
